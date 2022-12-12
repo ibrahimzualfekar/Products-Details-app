@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-secondary">
+
+
+  <div class=" bg-light rounded-5 w-75 m-auto p-5 mt-5">
+    <h1 class="mb-5 " role="button" style="font-family: 'Rochester', cursive;"><div class="bg-primary fw-bold d-inline-block rounded-5 p-2 px-5 text-dark">Products Details</div> </h1>
+
+    <label class="fw-bold">Product name</label>
+    <input id="productName" type="text" class="form-control mb-4">
+    <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Product name should start with capital letter and maximum seven small letters</div>
+    
+    <label class="fw-bold">Product price</label>
+    <input id="productPrice" type="number" class="form-control mb-4">
+    <div id="nameAlert2" class="alert alert-danger p-2 my-2 d-none">Product price should be valid </div>
+    
+    <label class="fw-bold">Product category</label>
+    <input id="productCategory" type="text" class="form-control mb-4">
+    <div id="nameAlert3" class="alert alert-danger p-2 my-2 d-none">product category not valid </div>
+    
+    <label class="fw-bold">Product Description</label>
+    <textarea id="productDesc" class="form-control mb-4"></textarea>
+    <div id="nameAlert4" class="alert alert-danger p-2 my-2 d-none">product description not valid </div>
+    
+    <button disabled id="addBtn" class="btn btn-primary float-end my-3">add product</button>
+    
+    <div class="clearfix"></div>
+    <input id="searchInput" type="text" placeholder="search by name...." class="form-control my-2">
+
+    <table class="table">
+      <thead>
+        <th class="text-center">index</th>
+        <th class="text-center">name</th>
+        <th class="text-center">price</th>
+        <th class="text-center">category</th>
+        <th class="text-center">description</th>
+        <th class="text-center">Update</th>
+        <th class="text-center">Delete</th>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
